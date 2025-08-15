@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        Multiplaication of a given number
+    </head>
+
+    <body>
+       <input type="number" id="num" placeholder="Enter number" />
+       <button onclick="showMultiplication()">Enter</button>
+
+        <div id="output"></div>
+
+       <script>
+       function showMultiplication() {
+        const num = document.getElementById('num').value;
+           let result = "";
+
+          if (!num) {
+          result = "Please enter a number.";
+           } else {
+            for (let i = 1; i <= 10; i++) {
+          result += `${num} x ${i} = ${num * i}<br>`;
+    }
+  }
+
+  document.getElementById('output').innerHTML = result;
+}
+</script>
+    </body>
+</html>
