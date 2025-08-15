@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <h1>
+            Displaying numbers using JAVA SCRIPT
+        </h1>
+    </head>
+    <body>
+
+        <h2>Numbers from 1 to 10</h2>
+
+        <p id="demo"></p>
+        <script>
+          let text = "";
+          
+          for(let i = 1; i <= 10; i++){
+          text += "Number: " + i + "<br>";
+          }
+          
+    document.getElementById("demo").innerHTML = text;
+          
+          </script>
+    </body>
+</html>
