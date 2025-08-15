@@ -1,0 +1,14 @@
+let n = prompt("Enter a positive number:");
+
+// Convert input to number
+n = Number(n);
+
+if (n > 0 && Number.isInteger(n)) {
+  let sum = 0;
+  for (let i = 1; i <= n; i++) {
+    sum += i;
+  }
+  console.log(`Sum of first ${n} numbers is ${sum}`);
+} else {
+  console.log("Please enter a valid positive integer.");
+}
