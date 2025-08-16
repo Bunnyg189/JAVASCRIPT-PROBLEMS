@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Number and String Operations</title>
+</head>
+<body>
+
+<h2>5. Factorial of a number</h2>
+<input type="number" id="factNum" placeholder="Enter a number" />
+<button onclick="factorial()">Calculate Factorial</button>
+<p id="factResult"></p>
+
+<script>
+function factorial() {
+  let n = Number(document.getElementById("factNum").value);
+  if (n < 0) {
+    document.getElementById("factResult").textContent = "Factorial not defined for negative numbers.";
+    return;
+  }
+  let fact = 1;
+  for (let i = 1; i <= n; i++) {
+    fact *= i;
+  }
+  document.getElementById("factResult").textContent = `Factorial of ${n} is ${fact}`;
+
+}
+</script>
+</body>
+
