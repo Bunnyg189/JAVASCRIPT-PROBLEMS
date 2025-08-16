@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>Fibonacci number</head>
+    <body>
+        <h2>7. Fibonacci series up to n terms</h2>
+        <input type="number" id="fibNum" placeholder="Enter number of terms" />
+        <button onclick="fibonacci()">Show Fibonacci</button>
+        <p id="fibResult"></p>
+
+        <script>
+            function fibonacci() {
+  let n = Number(document.getElementById("fibNum").value);
+  if (n <= 0) {
+    document.getElementById("fibResult").textContent = "Enter a positive number.";
+    return;
+  }
+  let fib = [0, 1];
+  for (let i = 2; i < n; i++) {
+    fib[i] = fib[i-1] + fib[i-2];
+  }
+  document.getElementById("fibResult").textContent = Fibonacci series: ${fib.slice(0,n).join(', ')};
+}
+
+
+        </script>
+
+    </body>
+</html>
